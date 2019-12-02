@@ -1,36 +1,34 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
-import Page from './pages/Page'
-import Page2 from './pages/Page2'
-import HomePage from './pages/HomePage'
-import NotFound from './pages/NotFound'
+import Button from './components/Button'
 
 const App = () => {
   return (
-    <Router>
-      <header>
-        <h1>Welcome to my SPA</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Go Home</Link>
-            </li>
-            <li>
-              <Link to="/1">Page 1</Link>
-            </li>
-            <li>
-              <Link to="/2">Page 2</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <Switch>
-        <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/1" component={Page}></Route>
-        <Route exact path="/2" component={Page2}></Route>
-        <Route path="*" component={NotFound}></Route>
-      </Switch>
-    </Router>
+    <div className="calculator-outline">
+      <div className="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>/ </button>
+      </div>
+      <div className="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>* </button>
+      </div>
+      <div className="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+ </button>
+      </div>
+      <div className="row">
+        <button>.</button>
+        <button>0</button>
+        <button>=</button>
+        <button>-</button>
+      </div>
+    </div>
   )
 }
 
