@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Button = () => {
-  const [operator, setOperator] = useState([])
+  const [operator, setOperator] = useState(0)
 
   const operatorUsed = val => {
     setOperator(prev => {
