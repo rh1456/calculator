@@ -18,7 +18,8 @@ body {
 .calculator-outline {
   height: 18.5rem;
   width: auto;
-  border: solid 2px blue;
+  border-style: outset;
+  margin: 2rem;
 }
 .digits {
   width: 5rem;

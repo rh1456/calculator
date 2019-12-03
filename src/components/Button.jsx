@@ -25,6 +25,7 @@ const Button = () => {
   }
   //switch method
   // let total = 0
+
   //
 
   return (
