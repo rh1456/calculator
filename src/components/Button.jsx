@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
 
 const Button = () => {
-  const [operator, setOperator] = useState(0)
+  const [operator, setOperator] = useState([])
 
   const operatorUsed = val => {
     setOperator(prev => {
       return prev + val
     })
-    debugger
-  }
-  const clearFunction = () => {
-    setOperator(0)
+    console.log(operatorUsed)
   }
 
   const calculate = () => {
@@ -23,6 +20,10 @@ const Button = () => {
     } else if (operator[1] === '/') {
       setOperator(parseInt(operator[0]) / parseInt(operator[2]))
     }
+  }
+
+  const clearFunction = () => {
+    setOperator([])
   }
   //switch method
   // let total = 0
