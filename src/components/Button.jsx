@@ -9,7 +9,7 @@ const Button = () => {
     })
   }
   const clearFunction = () => {
-    setOperator([])
+    setOperator()
   }
 
   const calculate = () => {
@@ -23,13 +23,16 @@ const Button = () => {
       setOperator(parseInt(operator[0]) / parseInt(operator[2]))
     }
   }
+  //switch method
+  // let total = 0
+  //
 
   return (
     <div className="app">
       <div className="calculator-outline">
         <div className="operator">{operator}</div>
         <div className="row">
-          <button className="clear" onClick={() => clearFunction}>
+          <button className="mathFunction" onClick={() => clearFunction}>
             C
           </button>
         </div>
