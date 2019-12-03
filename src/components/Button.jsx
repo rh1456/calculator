@@ -7,9 +7,10 @@ const Button = () => {
     setOperator(prev => {
       return prev + val
     })
+    debugger
   }
   const clearFunction = () => {
-    setOperator()
+    setOperator(0)
   }
 
   const calculate = () => {
@@ -33,7 +34,7 @@ const Button = () => {
       <div className="calculator-outline">
         <div className="operator">{operator}</div>
         <div className="row">
-          <button className="mathFunction" onClick={() => clearFunction}>
+          <button className="mathFunction" onClick={clearFunction}>
             C
           </button>
         </div>
